@@ -1,53 +1,1003 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-   CSS RESET!!!
+/*
+  Theme Name: Regna
+  Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+  Author: BootstrapMade.com
+  License: https://bootstrapmade.com/license/
 */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  background: #fff;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
 }
 
-/********************/
-/* END OF CSS RESET */
-/********************/
+a {
+  color: #00703C;
+}
+
+a:hover, a:active, a:focus {
+  color: #00703C;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+/* Sections Header
+--------------------------------*/
+.section-header .section-title {
+  font-size: 32px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.section-header .section-description {
+  text-align: center;
+  padding-bottom: 40px;
+  color: #999;
+}
+
+/* Index
+--------------------------------*/
+#about {
+  background: #fff;
+  padding: 40px 0;
+}
+
+#about .about-container .background {
+  min-height: 300px;
+  background: url(../img/femalesingles.jpg) center top no-repeat;
+  margin-bottom: 10px;
+}
+
+#about .about-container .content {
+  background: #fff;
+}
+
+#about .about-container .title {
+  color: #00703C;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+#about .section-title {
+  margin-bottom: 20px;
+}
+
+#about .member img {
+  width: 100%;
+}
+
+#about p {
+  padding-bottom: 15px;
+}
+
+@media (max-width: 770px) {
+  #about .about-container .title {
+    padding-top: 15px;
+  }
+}
+
+#about .about-container p {
+  line-height: 26px;
+}
+
+#about .about-container p:last-child {
+  margin-bottom: 0;
+}
+
+#about .about-container .icon-box {
+  background: #fff;
+  background-size: cover;
+  padding: 0 0 30px 0;
+}
+
+#about .about-container .icon-box .icon {
+  float: left;
+  background: #fff;
+  padding: 16px;
+  border-radius: 50%;
+  border: 2px solid #00703C;
+}
+
+#about .about-container .icon-box .icon i {
+  color: #00703C;
+  font-size: 24px;
+}
+
+#about .about-container .icon-box .title {
+  margin-left: 80px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#about .about-container .icon-box .title a {
+  color: #111;
+}
+
+#about .about-container .icon-box .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+#about .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 5px 90px 20px;
+  border: 2px solid #000;
+  color: #000;
+}
+
+#about .btn-get-started:hover {
+  background: #D5A00E;
+  border: 2px solid #D5A00E;
+}
+
+#about p {
+  margin-bottom: 10px;
+}
+
+/* Testimonials Section
+--------------------------------*/
+#facts {
+  background: #f7f7f7;
+  padding: 80px 0 60px 0;
+}
+
+#facts .counters span {
+  font-size: 48px;
+  display: block;
+  color: #00703C;
+}
+
+#facts .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+/* AboutUs Page
+--------------------------------*/
+
+#aboutUs {
+  margin-top: 20px;
+}
+
+#aboutUs h3 {
+  color: #00703C;
+  margin-bottom: 10px;
+}
+
+#aboutUs .container {
+  max-width: 80%;
+}
+
+@media (min-width: 768px) {
+  #aboutUs .container {
+    max-width: 60%;
+  }
+}
+
+#aboutUs p {
+}
+
+/* -----------------------------
+Director Section
+--------------------------------*/
+#directors {
+  background: #fff;
+  padding: 0;
+}
+
+#directors h3 {
+  color: #00703C;
+  margin-bottom: 20px;
+}
+
+
+#directors h4 {
+  padding-top: 10px;
+}
+
+.member {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+.member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+
+/* Services Page
+--------------------------------*/
+#services {
+  background: #fff;
+  background-size: cover;
+  padding: 50px 0 20px 0;
+}
+
+#services .box {
+  padding: 50px 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  height: 200px;
+  position: relative;
+  background: #fafafa;
+}
+
+#services .icon {
+  position: absolute;
+  top: -36px;
+  left: calc(50% - 36px);
+  transition: 0.2s;
+  border-radius: 50%;
+  display: inline-block;
+  border: 6px solid #fff;
+}
+
+#services .icon a {
+  display: inline-block;
+  background: #00703C;
+  border: 2px solid #00703C;
+  padding: 16px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+#services .icon i {
+  color: #fff;
+  font-size: 24px;
+}
+
+#services .box:hover .icon i {
+  color: #00703C;
+}
+
+#services .box:hover .icon a {
+  color: #00703C;
+  background: #fff;
+}
+
+#services .title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+#services .title a {
+  color: #111;
+}
+
+#services .description {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* Call To Action Section
+--------------------------------*/
+#call-to-action {
+  background-image:url(../img/contact_us.jpg);
+  background-size: cover;
+  padding: 80px 0;
+}
+
+#call-to-action .cta-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#call-to-action .cta-text {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  #call-to-action .cta-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+#call-to-action .cta-btn {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-action .cta-btn:hover {
+  background: #00703C;
+  border: 2px solid #00703C;
+}
+
+
+/* Membership
+--------------------------------*/
+#membershipInfo
+{
+	padding-left: 30px;
+	margin-bottom: 10px;
+	padding-top: 30px;
+}
+
+#membershipInfo ul
+{
+	padding-left: 0px;
+}
+
+#membershipInfo .title
+{
+	color: #00703C;
+}
+
+
+#applications li
+{
+	display:inline;
+}
+
+#racquets
+{
+	float: right;
+}
+
+@media (max-width: 618px)
+{
+	#applications li
+	{
+		display: block;
+		margin-bottom: 30px;
+		text-align:center;
+	}
+}
+
+#applications h2
+{
+	font-size: 20px;
+}
+
+#applications a:hover
+{
+	color: black;
+}
+
+@media (max-width: 1076px) and (min-width: 996px)
+{
+	#racquets
+	{
+		width: 40%;
+		height: 40%;
+	}
+}
+
+@media (max-width: 995px)
+{
+	#membershipInfo
+	{
+		padding: 50px;
+	}
+
+	#membershipInfo img
+	{
+		float: none;
+		margin-left: 200px;
+		width: 60%;
+		height: 60%;
+	}
+
+	#applications
+	{
+		text-align: center;
+	}
+}
+
+@media (max-width: 840px)
+{
+	#membershipInfo img
+	{
+		float: none;
+		width: 60%;
+		height: 60%;
+		margin-left: 170px;
+		margin-right: 50px;
+	}
+}
+
+@media (max-width: 686px)
+{
+	#membershipInfo img
+	{
+		float: none;
+		width: 60%;
+		height: 60%;
+		margin-left: 120px;
+		margin-right: 50px;
+	}
+
+	#applications
+	{
+		text-align: center;
+	}
+}
+
+@media (max-width: 576px)
+{
+	#membershipInfo img
+	{
+		float: none;
+		width: 60%;
+		height: 60%;
+
+	}
+}
+
+@media (max-width: 469px)
+{
+	#membershipInfo img
+	{
+		float: none;
+		width: 60%;
+		height: 60%;
+	}
+}
+
+@media (min-width: 20px)
+{
+ .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 5px 20px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+ .btn-get-started:hover {
+  background: #00703C;
+  border: 2px solid #00703C;
+}
+
+#applications
+{
+	text-align: center;
+	padding-top: 10px
+}
+}
+
+
+/* Contact Section
+--------------------------------*/
+#contactListing
+{
+	list-style: none;
+	color: white;
+}
+
+#contact {
+  background: #f7f7f7;
+}
+
+#contact .info p {
+  color: #ffffff;
+  text-align: left;
+}
+
+#contact .info i {
+  font-size: 32px;
+  color: #D5A00E;
+  float: left;
+}
+
+#contact .info p {
+  padding: 0 0 10px 50px;
+  margin-bottom: 20px;
+  line-height: 22px;
+  font-size: 14px;
+}
+
+#contact .info .email p {
+  padding-top: 5px;
+}
+
+#contact .social-links {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+#contact .social-links a {
+  font-size: 8px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 0;
+  padding-top: 4px;
+  padding-left: 6px;
+  border-radius: 80%;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+}
+
+#contact .social-links .facebook {
+  padding-left: 10px;
+}
+#contact .social-links a:hover {
+  background: #fff;
+  color: #fff;
+}
+
+#contact .form {
+  margin-top: 50px;
+}
+#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
+  display: block;
+}
+
+#contact .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#contact .form input, #contact .form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+#contact .form button[type="submit"] {
+  background: #00703C;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+#contact .form button[type="submit"]:hover {
+  background: #4e4e4e;
+}
+
+#contactCon
+{
+	display: block-inline;
+	margin-left: 15px;
+}
+
+#contactUs {
+  padding-top: 20px;
+  background-color: #f7f7f7;
+  padding-bottom: 20px;
+}
+
+#contactUs .info p{
+  color: #747474;
+
+}
+#mapArea {
+  padding-top: 10px;
+}
+.name
+{
+	color: white;
+}
+
+#name
+{
+	font-size: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: block;
+	line-height: 30px;
+	border: none;
+	border-radius: 3px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.email
+{
+	color: white;
+}
+
+#email
+{
+	font-size: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: block;
+	line-height: 30px;
+	border: none;
+	border-radius: 3px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.phone
+{
+	color: white;
+}
+
+
+#phone
+{
+	font-size: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: block;
+	line-height: 30px;
+	border: none;
+	border-radius: 3px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.comments
+{
+	color: white;
+}
+
+
+#comments
+{
+	font-size: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: block;
+	line-height: 30px;
+	border: none;
+	border-radius: 3px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.subject
+{
+	color: white;
+}
+
+
+#subject
+{
+	font-size: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: block;
+	line-height: 30px;
+	border: none;
+	border-radius: 3px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#submit
+{
+	border:none;
+	border-radius: 3px;
+}
+
+#submit:hover
+{
+	color: #2dc997;
+}
+
+@media (max-width: 770px) {
+	#contactCon
+	{
+		margin: 0 auto;
+	}
+
+}
+
+
+/* Service Page
+--------------------------------*/
+
+
+#services a:hover {
+  color: #000;
+
+}
+
+#service .service-container .background {
+}
+
+#service .service-container .content {
+  background: #fff;
+}
+
+#service .service-container .title {
+  color: #333;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+@media (max-width: 770px) {
+  #service .service-container .title {
+    padding-top: 15px;
+  }
+}
+
+#service .service-container p {
+  line-height: 26px;
+}
+
+#service .service-container p:last-child {
+  margin-bottom: 0;
+}
+
+#service .service-container .icon-box {
+  background: #fff;
+  background-size: cover;
+  padding: 0 0 30px 0;
+}
+
+#service .service-container .icon-box .icon {
+  float: left;
+  background: #fff;
+  padding: 16px;
+  border-radius: 50%;
+  border: 2px solid #00703C;
+}
+
+#service .service-container .icon-box .icon i {
+  color: #00703C;
+  font-size: 24px;
+}
+
+#service .service-container .icon-box .title {
+  margin-left: 80px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#service .service-container .icon-box .title a {
+  color: #111;
+}
+
+#service .service-container .icon-box .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+#service .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 5px 90px 20px;
+  border: 2px solid #000;
+  color: #000;
+}
+
+#service .btn-get-started:hover {
+  background: #00703C;
+  border: 2px solid #00703C;
+}
+
+.gallery img {
+  max-width: 370px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+
+
+/*-------------
+Events
+--------------*/
+#events {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.googleCalendar{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-bottom: 70%;
+}
+
+.googleCalendar iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*Media Queries*/ 
+
+@media screen and (min-width:20px){
+  #header #logo-text {
+    display: none;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 850px){
+   #header #logo-text {
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+  
+  #nav-menu-container
+	{
+  	  	float: right;
+   		margin-left: 20px;
+	}
+	
+	#logo_complete {
+   		float: left;
+  }
+  
+ 	#header
+	{
+		margin-bottom: 10px;
+	}
+  
+  #nav-menu-container
+	{
+  	  	float: right;
+   		margin-left: 20px;
+	} 
+	
+	#header #logo img {
+    position: relative;
+    max-height: 65px;
+  } 
+}
+
+@media  (max-width: 850px)
+{
+	#logo_complete {
+   		float: left;
+  }
+  
+  #header #logo img {
+    position: relative;
+    max-height: 50px;
+	margin-top: 10px;
+  }
+	
+  #header #logo-text {
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+
+#nav-menu-container
+	{
+  	  	float: right;
+   		margin-left: 20px;
+	}
+}
+
+@media screen and (min-width: 851px) and (max-width: 1000px){
+
+	#logo_complete {
+   		float: left;
+  }
+
+    #header #logo img {
+	  position:relative;
+    }
+	
+	#header #logo-text {
+		position: relative;
+	}
+	
+	#nav-menu-container
+	{
+		display: block;
+  	  	float: right;
+		margin-top: 20px;
+	} 
+}
+
+  
+@media (min-width:1000px){
+
+  header {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+    #header #logo img {
+    position: relative;
+  }
+
+  #header #logo-text {
+    position: relative;
+	display: block;
+	float:left;
+	margin-right: 0px;
+}
+
+	#header #logo-text img
+	{
+		height: 55px;
+	}
+
+#logo_complete
+{
+	float:left;
+}
+
+  #nav-menu-container {
+  	float: right;
+	margin-top: 30px;
+}
+	
+}
