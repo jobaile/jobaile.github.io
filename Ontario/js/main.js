@@ -1,25 +1,30 @@
-import HomeComponent from "./components/HomeComponent.js";
-import RegisterComponent from "./components/RegisterComponent.js";
+//Components
+
+import promoComponent from './components/promoComponent.js'; 
+import formComponent from './components/formComponent.js';
+
 
 const routes = [
-  { path: "/", name: "home", component: HomeComponent },
-  { path: "/home", name: "Home", component: HomeComponent },
-  { path: "/register", name: "Register", component: RegisterComponent}
+    { path: '/', redirect: {name: 'promotions'}},
+    { path: '/home', name: 'promotions', component: promoComponent },
+    { path: '/signup', name: 'signup', component: formComponent }
 ];
 
-const router = new VueRouter({
-  // mode: 'history',
-  routes
+const router = new VueRouter ({
+    routes
 });
 
-const vm = new Vue({
-  // el: '#app',
+const vm = new Vue ({
+    el: '#app',
 
-  data: {},
+    data: {
+        message: "Hi from vue!",
+    },
 
-  mounted() { },
+    created: function(){
+        console.log('hello hello');
+    },
 
-  methods: {},
-
-  router: router
+    router: router
 }).$mount("#app");
+

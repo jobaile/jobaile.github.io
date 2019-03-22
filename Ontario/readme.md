@@ -1,40 +1,53 @@
 # Ontario Summer
+![logo](https://github.com/jobaile/baile_doria_litman_rose_midterm/blob/master/images/logo.svg)
 
-Hackathon - MidTerm Winter 2019
+#### The Challenge:
+Ontario Summer is committed to increasing annual non-resident visitation to Ontario during the short 75-day tourism season from June to August. The goal is to create a campaign that will educate potential visitors as to how they can find themselves at home in Ontario throughout the beautiful summer months.
 
-### Team
-
-- PROJECT MANAGER: Emma Blue
-- GRAPHIC DESIGNER: Alderson Mariah
-- FRONT-END WEB DEVELOPER: Daniela Dantas
-- BACK-END WEB DEVELOPER: Camillo Angelozzi
-- MOTION/3D ARTIST: Jacob Atkinson
+#### The Campaign:
+In order to reach the set goals and attract non-residents to visit Ontario, it is necessary to develop a strong brand and enticing web and marketing campaign that positions Ontario as the ultimate summer travel destination. This campaign will feature graphically driven content, which focuses on the natural beauty, adventure and peaceful retreat that Ontario offers. 
 
 
-![image](images/readme_img/mockup1.png)
+## Installation
+**Install [npm](https://www.npmjs.com/get-npm) if not already done so**
 
-This site is a marketing campaign to attract tourists from outside Ontario to the province over the summer. We used a parallax scrolling effect for the landing page, coded a custom registration form connected to the MailChimp API to add each registered user to a MailChimp email list, and created an original tourism video.
+1. Command line:
+`$ git clone https://github.com/jobaile/baile_doria_litman_rose_midterm`
 
-![image](images/readme_img/mockup2.png)
+2. Install dependencies
+`$ npm install`
+`$ npm install gulp-sass`
 
-## Tools used during development phase:
-- Adobe Illustrator, Photoshop, After Effects, XD, Premiere
-- PHP/MySQL
-- Gulp.js
-- SASS
-- Javascript Fetch API, to get data from backend database
-- https://developer.mailchimp.com/ - Mailchimp API
+3. Compile style files
+`$ gulp`
+
+4. Add project folder to your local server (MAMP for MacOS users, XAMPP or WAMP for Windows or Linux)
+
+5. Insert db_tourism (provided inside database folder) onto your PHPMyAdmin
+
+6. Run page through your localhost.
+
+## Built With
+
+* [Vue.js](https://vuejs.org/) - The progressive JavaScript framework
+* [Gulp](https://gulpjs.com/) - For workflow
+* [Bootstrap](https://getbootstrap.com/) - Bootstrap 4 framework
+* [NPM](https://www.npmjs.com/get-npm) - Makes it easier to share our stuff!
+* Photoshop, Illustrator, xD, AfterEffects
+* HTML, CSS, JavaScript, PHP, MySQL
 
 
-### Giving credits for places that helped to do this project
+## Authors
 
-- https://stackoverflow.com/
-- https://airbnb.io/lottie/web/web.html
-- https://sass-lang.com/
-- https://developer.mailchimp.com/documentation/mailchimp/
-- https://mailchimp.com/
+* **Fernando D'Oria** - *Motion Designer* - [Github](https://github.com/nandodoria) & [Portfolio](http://nandodoria.ca/)
 
-### Future Improvements
-- Social Media Feeds
-- Dynamic Events Page
-- Backend and Database to be expanded.
+* **Logan Litman** - *Graphic Designer* - [Github](https://github.com/loganlitman) & [Portfolio](http://loganlitman.com/)
+
+* **Carter Rose** - *Front-End Developer* - [Github](https://github.com/crose20) & [Portfolio](http://carterrose.ca/)
+
+* **Joanna Baile** - *Back-End Developer* - [Github](https://github.com/jobaile) & [Portfolio](http://joannabaile.com/)
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
