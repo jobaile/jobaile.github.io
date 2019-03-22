@@ -1,44 +1,12 @@
-// gulp modules required
-let gulp = require("gulp");
-let sass = require("gulp-sass");
-const imagemin = require("gulp-imagemin");
-let browserSync = require("browser-sync").create();
+const gulp = require('gulp');
+const sass =  require('gulp-sass');
 
-// server task
-gulp.task("serve", function() {
-  browserSync.init({
-    server: {
-      baseDir: "./",
-      index: "index.html"
-    }
-  });
+gulp.task('sass', function(){
+    return gulp.src('./sass/**/*.scss')
+    .pipe(sass({ outputStyle: "compressed"}))
+    .pipe(gulp.dest('./css'));
 });
 
-// Logs Message
-gulp.task("message", function() {
-  return console.log("Gulp is running...");
-});
-
-// Compile Sass
-gulp.task("sass", function() {
-  return gulp
-    .src("./sass/**/*.scss")
-    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
-    .pipe(gulp.dest("./css"));
-});
-
-// Optimize Images
-gulp.task("imageMin", () =>
-  gulp
-    .src("images/*")
-    .pipe(imagemin())
-    .pipe(gulp.dest("images/optimized"))
-);
-
-gulp.task("default", ["message", "imageMin", "sass"]);
-
-// watch task running
-gulp.task("watch", function() {
-  gulp.watch("./sass/**/*.scss", ["sass"]);
-  gulp.watch("images/*", ["imageMin"]);
-});
+gulp.task('default', gulp.series('sass'), function(){
+    gulp.watch('.sass/**/*.scss'), gulp.series('sass');
+})

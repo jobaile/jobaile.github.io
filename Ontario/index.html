@@ -1,37 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Ontario Summer</title>
-  <link rel="stylesheet" href="css/main.css" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
-  <!-- <link rel="shortcut icon" type="image/png" href="images/favicon.png" /> -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.0.2/vue-router.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ontario Summer | Ontario Tourism</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://use.typekit.net/bln4yuu.css"> <!--Futura Font-->
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- Vue -->
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 </head>
+<body>
+  <!-- Vue Start -->
+  <main id="app">
+    <!-- Navbar -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-light fixed-top">
+          <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo" id="navlogo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                  <div class="nav-items">
+                      <router-link :to="{ path: '/'}" class="nav_item">HOME</router-link>
+                      <router-link :to="{ path: '/signup'}" class="nav_item">SUBSCRIBE</router-link>
+                  </div>
+              </div>
+          </div>
+      </nav>
+      </div>
+      <!-- Navbar end -->
+      
+    <transition name="fade" mode="out-in">
+        <router-view></router-view>
+    </transition>
 
-<body data-palette='0'>
-  <main>
-    <div id="app">
-      <!-- ! ROUTER LINK -->
-      <!-- <router-link v-if="authenticated" to="/login" @click.native="logout()">Logout</router-link> -->
-      <!-- <router-link :to="{path: '/users/1'}" class="link">Users</router-link>
-          <router-link :to="{path: '/contact'}" class="link">Contact</router-link>  -->
+    <footer id="footer"  class="footercon">
+        
+        <div class="row">
+          <div class="col well">
+            <img src="images/logo-orange.svg" id="footerlogo">
+            <ul class="noflex" id="footernav">
+                <router-link :to="{ path: '/'}">
+                  <a><li>HOME</li></a>
+                </router-link>
+              <a href="#aboutstart"><li>ABOUT</li></a>
+              <router-link :to="{ path: '/signup'}">
+                <a><li>SUBSCRIBE</li></a>
+              </router-link>
+              <a href="#"><li>HELP</li></a>
+            </ul>
+          </div>
+        </div>
 
-      <!-- ! Vue Router Element -->
-      <transition name="fade" mode="out-in">
-        <router-view />
-      </transition>
+        <div class="row">
+          <div class="col"><img src="images/nature_skyline.png" width="100%"></div>
+        </div>
+        
+      </footer>
+</main>
 
-    </div>
 
-  </main>
-  <script src="js/main.js" type="module"></script>
+  <script type="module" src="js/main.js"></script>
+  <script src="js/app.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
 </body>
-
 </html>

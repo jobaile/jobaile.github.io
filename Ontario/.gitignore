@@ -1,9 +1,11 @@
-.DS_Store
-._.DS_Store
 .vscode
+*.zip
+_DS_Store
 node_modules
-
+*.psd
+extra.php
+sign-up1.php
 .sass-cache
-assets
-.psd
-.ai
+form.html
+navbar.html
+signupORIG.php
