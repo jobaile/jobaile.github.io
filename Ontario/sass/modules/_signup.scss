@@ -1,0 +1,295 @@
+input {
+  border: none;
+
+}
+
+select {
+
+  margin-top: 10px;
+}
+
+#country-label {
+
+  font-size: 1.25em;
+  margin-bottom: 15px;
+}
+
+#button-container {
+
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+
+  button {
+
+    width: 40%;
+  }
+
+  button:focus {
+    outline: none;
+  }
+}
+
+
+::-webkit-input-placeholder {
+  color:black;
+}
+
+::-webkit-input-placeholder .input-line:focus+ ::input-placeholder {
+  color: black;
+}
+
+.highlight {
+  color:black;
+  font-weight: 400;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.highlight:hover {
+  color: black;
+  transition: color 0.2s ease;
+}
+
+
+.input-line:focus {
+  outline: none;
+  border-color: black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.ghost-round {
+  cursor: pointer;
+  background:rgba(255, 255, 255, 0.85);
+  border: 2px solid rgba(1, 1, 1, 0.65);
+  color: black;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  font-size: 19px;
+  font-size: 1.2rem;
+  font-family: $reg-font;
+  font-weight: 300;
+  line-height: 2.5em;
+  margin-top: auto;
+  margin-bottom: 25px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.ghost-round:hover {
+  background: rgba(1, 1, 1, 0.85); 
+  color: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.input-line {
+  background: none;
+  margin-bottom: 10px;
+  line-height: 2.4em;
+  color:black;
+  font-family: $reg-font;
+  font-weight: 300;
+  letter-spacing: 0px;
+  letter-spacing: 0.02rem;
+  font-size: 1.25rem;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.65);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.input-fields {
+  margin-top: 25px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  //background: #eee;
+  background: url("../images/contact-small.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.content {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  z-index: 5;
+}
+
+.welcome {
+  font-weight: 200;
+  margin-top: 75px;
+  text-align: center;
+  font-size: 40px;
+  font-size: 2.5rem;
+  letter-spacing: 0px;
+  letter-spacing: 0.05rem;
+  font-family: $reg-font;
+}
+
+.subtitle {
+  text-align: center;
+  line-height: 1em;
+  font-weight: 100;
+  letter-spacing: 0px;
+  letter-spacing: 0.02rem;
+  font-family: $reg-font;
+  padding-top: 15px;
+  font-size: 1.25em;
+}
+
+.menu {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 50px;
+}
+
+.dropdown {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url("../images/arrow.svg") no-repeat;
+  border-radius: 25px;
+  border: 1px black solid;
+  padding-left: 10px;
+  background-position: 98% 60%;
+  background-size: 20px;
+}
+
+.grey {
+
+  color: rgba(255, 255, 255, 0.85);
+}
+
+
+.window {
+  z-index: 100;
+  color: black;
+  font-family: $reg-font;
+  font-size: 1em;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  height: 560px;
+  width: 360px;
+  background: white;
+}
+
+.overlay {
+  background: white;
+  opacity: 0.8;
+  filter: alpha(opacity=85);
+  height: 560px;
+  position: absolute;
+  width: 360px;
+  z-index: 1;
+}
+
+.bold-line {
+  //background: #e7e7e7;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  width: 100%;
+  height: 360px;
+  z-index: 1;
+  opacity: 0.1;
+}
+
+@media (max-width: 500px) {
+  .window {
+    height: 80%;
+    margin-top: 20%;
+  }
+  .overlay {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 720px) {
+
+  .window, .overlay {
+
+    height: 500px;
+    width: 660px;
+  }
+}
+
+// Image Optimization
+
+@media (min-width: 420px) and (max-width: 600px) {
+
+  .container {
+
+    background: url("../images/contact-med.jpg") no-repeat;
+    background-size: cover;
+  }
+
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+  .container {
+
+    background: url("../images/contact-tablet.jpg") no-repeat;
+    background-size: cover;
+
+
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1119px) {
+  .container {
+
+    background: url("../images/contact-desk.jpg") no-repeat;
+    background-size: cover;
+
+
+  }
+
+}
+
+@media (min-width: 1200px){
+
+  .container {
+
+    background: url("../images/contact-pic.jpg") no-repeat;
+    background-size: cover;
+
+
+  }
+}
+
